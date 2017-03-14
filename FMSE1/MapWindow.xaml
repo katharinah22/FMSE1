@@ -1,0 +1,15 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FMSE1"
+        xmlns:WindowsPresentation="clr-namespace:GMap.NET.WindowsPresentation;assembly=GMap.NET.WindowsPresentation" x:Name="MapWindow1" x:Class="FMSE1.MapWindow"
+        mc:Ignorable="d"
+        Title="MapWindow" Height="500" Width="700">
+    <Grid>
+
+        <WindowsPresentation:GMapControl x:Name="MyMap" HorizontalAlignment="Left" Height="449" Margin="10,10,0,0" VerticalAlignment="Top" Width="672" MaxZoom="18" Zoom="13"/>
+
+    </Grid>
+</Window>

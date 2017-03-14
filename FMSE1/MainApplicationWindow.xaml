@@ -1,0 +1,23 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FMSE1"
+        xmlns:WindowsPresentation="clr-namespace:GMap.NET.WindowsPresentation;assembly=GMap.NET.WindowsPresentation" x:Class="FMSE1.MainApplicationWindow"
+        xmlns:controls="clr-namespace:FMSE1"
+        mc:Ignorable="d"
+        Title="MainApplicationWindow" Height="300" Width="300"
+        WindowState="Maximized">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" Name="ContentColumn"/>
+            <ColumnDefinition Width="5" />
+            <ColumnDefinition Width="*" Name="MapColumn"/>
+        </Grid.ColumnDefinitions>
+        <GridSplitter x:Name="MyGridsplitter" Grid.Column="1" Width="5" HorizontalAlignment="Stretch" DragCompleted="DragCompleted" />
+        <WindowsPresentation:GMapControl Grid.Column="2" x:Name="MapView" HorizontalAlignment="Center" Height="2000" Margin="0,0,0,0" VerticalAlignment="Center" Width="2000" MaxZoom="18" Zoom="13" x:FieldModifier="public" />
+        <controls:Menu x:Name="myMenu" />
+        <Button x:Name="testWindowButton" Content="Open Test Windows" HorizontalAlignment="Center" Margin="0,0,0,10" VerticalAlignment="Bottom" Width="120" Click="testWindowButton_Clicked" x:FieldModifier="public"/>
+    </Grid>
+</Window>
